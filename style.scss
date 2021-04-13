@@ -1,0 +1,28 @@
+
+@media (max-width: 480px) {
+    .bloc-page{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1.5fr 0.8fr;
+        grid-area:
+        "a
+         b
+         c 
+         d";
+    }
+    .contain-images{
+        width: 80%;
+        color: #000;
+        .yoyo{
+            width: 50%;
+           
+            }
+        }
+    }
+
+.restaurant-12{
+    width: 50%;
+    img{
+        width: 100%;
+}
+}
