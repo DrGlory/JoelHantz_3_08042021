@@ -1,28 +1,49 @@
 
-@media (max-width: 480px) {
-    .bloc-page{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 1fr 1.5fr 0.8fr;
-        grid-area:
-        "a
-         b
-         c 
-         d";
-    }
+// @media (max-width: 480px) {
+    // .bloc-page{
+    //     display: grid;
+    //     grid-template-columns: 1fr;
+    //     grid-template-rows: 0.5fr 1fr 1.5fr 0.8fr;
+    //     grid-area:
+    //     "a
+    //      b
+    //      c 
+    //      d";
+    // }
     .contain-images{
         width: 80%;
         color: #000;
         .yoyo{
             width: 50%;
-           
+        }
+    }
+@media (max-width: 480px){
+    header{
+        background-color: rgb(238, 238, 238);
+        .log {
+            box-shadow: 0 2px 10px -2px rgb(150, 150, 150);
+            text-align: center;
+            background-color: white;      
+            .logo{
+                width: 50%;
+            }
+        }
+        .localisation{
+             width: 100%;
+             text-align: center;
+             padding:1%;
+             .map{
+                padding: 0 2% 0 0; 
             }
         }
     }
+    .section-1{
+        background-color: rgb(243, 236, 242);
+    }
+}
+// .restaurant-12{
+//     width: 50%;
+//     img{
+//         width: 100%;
+// }
 
-.restaurant-12{
-    width: 50%;
-    img{
-        width: 100%;
-}
-}
