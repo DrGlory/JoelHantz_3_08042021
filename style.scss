@@ -1,4 +1,13 @@
-
+@font-face {
+    font-family: Shrikhand;
+    src: url('P3_REAL/Police/Shrikhand-Regular.otf');
+}
+@font-face {
+    font-family: roboto;
+    src: url('Police/web fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff');
+}
+$primary-color:#9356DC;
+$secondary-color: #FF79DA;
 // @media (max-width: 480px) {
     // .bloc-page{
     //     display: grid;
@@ -19,26 +28,91 @@
     }
 @media (max-width: 480px){
     header{
-        background-color: rgb(238, 238, 238);
+        background-color: #eaeaea;
         .log {
             box-shadow: 0 2px 10px -2px rgb(150, 150, 150);
             text-align: center;
-            background-color: white;      
+            background-color: white;
+            padding: 4%;      
             .logo{
                 width: 50%;
             }
         }
         .localisation{
-             width: 100%;
+            font-family: roboto;
              text-align: center;
-             padding:1%;
+             padding:3%;
              .map{
                 padding: 0 2% 0 0; 
             }
         }
     }
     .section-1{
-        background-color: rgb(243, 236, 242);
+        font-family: roboto;
+        h1{
+            margin-top: 0;
+            padding-top: 8%;
+        }
+        .take{
+            background-color: #f6f6f6;
+            text-align: center;
+            padding-bottom: 15%;
+        }
+        input{
+            color: whitesmoke;
+            background: linear-gradient(to top,$primary-color, $secondary-color);
+            border-radius: 20px;
+            padding: 3% 1% 3% 6%;
+            border: none;
+            box-shadow: 0 3px 8px 0 rgb(180, 180, 180);
+        }
+        &.Choose{
+            background-color: whitesmoke;
+            box-sizing: border-box;
+            }  
+             h2{
+                margin-bottom: 0;
+            }
+
+            .restau{
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 5%;
+                .pop{
+                    padding: 0 8%;
+                }
+            }
+            .restau a{
+                text-decoration: none;
+                color: black;
+                &.restau__link{
+                    padding: 7%;
+                    border-radius: 30px;
+                    background-color: #f6f6f6;
+                    box-shadow: 0 5px 11px 0 rgb(180, 180, 180);
+                }
+                .restau__link-number{
+                    text-align: center;
+                    color: whitesmoke;
+                    position: absolute;
+                    left: 20px;
+                    background-color: $primary-color;
+                    border-radius: 50%;
+                    width: 5%;
+                    display: block;
+                }
+               
+            }
+        
+
+
+            // .take__btn{
+            //     background-color: $primary-color;
+            //     border-radius: 5px;
+                       
+            // }
     }
 }
 // .restaurant-12{
