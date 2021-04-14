@@ -18,6 +18,9 @@
 }
 
 @media (max-width: 480px) {
+  body {
+    margin: 0;
+  }
   header {
     background-color: #eaeaea;
   }
@@ -49,7 +52,7 @@
   .section-1 .take {
     background-color: #f6f6f6;
     text-align: center;
-    padding-bottom: 15%;
+    padding: 5% 5% 15% 5%;
   }
   .section-1 input {
     color: whitesmoke;
@@ -67,7 +70,7 @@
             box-sizing: border-box;
   }
   .section-1 h2 {
-    margin-bottom: 0;
+    margin: 3% 0 0 7%;
   }
   .section-1 .restau {
     height: 300px;
@@ -84,6 +87,9 @@
   }
   .section-1 .restau .pop {
     padding: 0 8%;
+  }
+  .section-1 .restau .pop:hover {
+    color: #9356DC;
   }
   .section-1 .restau a {
     text-decoration: none;
@@ -105,6 +111,48 @@
     border-radius: 50%;
     width: 5%;
     display: block;
+  }
+  .section-2 {
+    font-family: roboto;
+    background-color: #f6f6f6;
+  }
+  .section-2 .contain-images {
+    width: 100%;
+  }
+  .section-2 .contain-images img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    border-radius: 6% 6% 0 0;
+  }
+  .section-2 .contain-images .new {
+    background-color: #96e0ce;
+    padding: 2%;
+    color: #589284;
+  }
+  .section-2 .contain-images .restaurant__heading {
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 1%;
+  }
+  footer {
+    color: white;
+    background-color: #353535;
+    font-family: roboto;
+  }
+  footer .footer__heading {
+    font-family: shrikhand;
+    font-size: 1.5em;
+    padding: 5%;
+  }
+  footer .watchasay, footer .ending {
+    padding: 0 0 2% 5%;
+  }
+  footer .watchasay .ye, footer .ending .ye {
+    padding-right: 3%;
+  }
+  footer .watchasay .ending__cont, footer .ending .ending__cont {
+    padding: 3% 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
