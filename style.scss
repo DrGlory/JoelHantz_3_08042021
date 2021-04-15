@@ -62,6 +62,7 @@ $secondary-color: #FF79DA;
             padding: 5% 5% 15% 5%;
         }
         input{
+            font-size: 1em;
             color: whitesmoke;
             background: linear-gradient(to top,$primary-color, $secondary-color);
             border-radius: 20px;
@@ -103,7 +104,7 @@ $secondary-color: #FF79DA;
                     text-align: center;
                     color: whitesmoke;
                     position: absolute;
-                    left: 20px;
+                    left: 15px;
                     background-color: $primary-color;
                     border-radius: 50%;
                     width: 5%;
@@ -115,29 +116,56 @@ $secondary-color: #FF79DA;
     .section-2{
         font-family: roboto;
         background-color: #f6f6f6;
+        padding: 5%;
+        h2{
+            padding-left: 5%;
+        }
         .contain-images{
             width: 100%;
-            // grid-template-columns: 1fr;
-            // grid-template-rows: repeat(4, 1fr);
-            // .restaurant-1{
-            //     grid-column:1/2 ;
-            //     grid-row: 1/2;
-            // }
+            .restaurant{
+                margin: 5%;
+                border-radius: 6%;
+                box-shadow: 0 5px 11px 0 rgb(180, 180, 180);
+                display: grid;
+                grid-template-columns: 1fr 1.5fr 1fr 0.1fr;
+                grid-template-rows: 0.1fr 0.1fr 0.5fr 0.2fr;
+            }
+            .restaurant-img{
+                grid-column: 1/5;
+                grid-row: 1/4;
+            }
+            .bigheight{
+                height: 300px;
+            }
             img{
                 object-fit: cover;
                 width: 100%;
+                max-height: 100%;
                 border-radius: 6% 6% 0 0;
             }
             .new{
+                grid-column: 3/4;
+                grid-row: 2/3;
                 background-color: #96e0ce;
                 padding: 2%;
                 color: #589284;
+                text-align: center;
             }
             .restaurant__heading{
-                font-weight: bold;
                 font-size: 1.3em;
                 line-height: 1%;
             }
+            .group{
+                padding: 0 5% 7% 5%;
+                grid-column: 1/5;
+                grid-row: 4/5;
+                display: flex;
+                justify-content: space-between;
+                .hrt{
+                    font-size: 1.7em;
+                    padding: 5%;
+                }
+             }
         }
     }
     footer{
