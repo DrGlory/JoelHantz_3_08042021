@@ -6,8 +6,29 @@
     font-family: roboto;
     src: url('Police/web fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff');
 }
+@mixin footer {
+    color: white;
+        background-color: #353535;
+        font-family: roboto;
+        .footer__heading{
+            font-family: shrikhand;
+            font-size: 1.5em;
+            padding: 5%;
+        }
+        .watchasay, .ending{
+            padding: 0 0 2% 5%;
+            .ye{
+                padding-right: 3%;
+            }
+            .ending__cont{
+                padding: 3% 0;
+            }
+        }
+    }
+
 $primary-color:#9356DC;
 $secondary-color: #FF79DA;
+$tertiary-color:#99E2D0;
 // @media (max-width: 480px) {
     // .bloc-page{
     //     display: grid;
@@ -19,13 +40,13 @@ $secondary-color: #FF79DA;
     //      c 
     //      d";
     // }
-    .contain-images{
-        width: 80%;
-        color: #000;
-        .yoyo{
-            width: 50%;
-        }
-    }
+    // .contain-images{
+    //     width: 80%;
+    //     color: #000;
+    //     .yoyo{
+    //         width: 50%;
+    //     }
+    // }
 @media (max-width: 480px){
         body{
         margin: 0
@@ -42,6 +63,7 @@ $secondary-color: #FF79DA;
             }
         }
         .localisation{
+            font-size: 1.1em;
             font-family: roboto;
              text-align: center;
              padding:3%;
@@ -182,6 +204,9 @@ $secondary-color: #FF79DA;
             .ye{
                 padding-right: 3%;
             }
+            .iye{
+                padding-right: 5%;
+            }
             .ending__cont{
                 padding: 3% 0;
             }
@@ -194,3 +219,93 @@ $secondary-color: #FF79DA;
 //         width: 100%;
 // }
 
+
+// ceci représente le header pour les autres pages//
+@media (max-width: 480px){
+    body{
+        margin: 0
+    }
+    .menu-header{
+        background-color: #ffffff;
+        .logo-uni{
+             padding: 5% 0 0 0;
+             width: 50%;
+            // text-align: center;
+             background-color: white;
+        }
+        .green-arrow{
+            padding: 0 15% 5% 6%;
+         }
+        .bg img{
+            width: 100%;
+        }       
+
+    }
+    .contain{
+        border-radius: 40px 40px 0 0 ;
+        background-color: #f6f6f6;
+        font-family: roboto;
+        padding: 7%;
+        margin-top: 70%;
+        .glob{
+            padding: 2% 0;
+            height: 20em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .frenchie{
+            padding-top: 10%;
+            font-family: shrikhand;
+            font-size: 1.7em;
+            display: flex;
+            justify-content: space-between;
+        }
+        .hrt{
+            padding-top: 2%;
+        }
+        .titre{
+            font-size: 1.1em;
+        }
+        .arr{
+            padding:3%;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 11px 0 rgb(180, 180, 180);
+            p{
+                font-weight: bold;
+                margin:0 0 2% 0;
+            }
+            .price{
+                display: flex;
+                justify-content: space-between;
+            }
+            .euro{
+                padding-right: 3%;
+                font-weight: bold;
+            }
+            
+        }
+        .take__btn-2{
+            padding: 8% 1% 20% 1%;
+            text-align: center;
+        }
+        input{
+            box-shadow: 0 4px 8px 0 rgb(180, 180, 180);
+            width: 40%;
+            text-align: center;
+            font-size: 1em;
+            padding: 5%;
+            border-radius: 20px;
+            border: none;
+            color:white;
+            background: linear-gradient(to top left,#9356DC, #FF79DA)
+           
+        }
+        // .price{
+        //     display: flex;
+        // }
+
+    }
+    
+}
