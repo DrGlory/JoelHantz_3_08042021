@@ -239,7 +239,6 @@ $tertiary-color:#99E2D0;
         .bg img{
             width: 100%;
         }       
-
     }
     .contain{
         border-radius: 40px 40px 0 0 ;
@@ -299,13 +298,7 @@ $tertiary-color:#99E2D0;
             border-radius: 20px;
             border: none;
             color:white;
-            background: linear-gradient(to top left,#9356DC, #FF79DA)
-           
+            background: linear-gradient(to top left,#9356DC, #FF79DA) 
         }
-        // .price{
-        //     display: flex;
-        // }
-
-    }
-    
+    }   
 }
