@@ -213,8 +213,8 @@
   body {
     margin: 0;
   }
-  .jj {
-    background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  .jj-pg {
+    background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     background-size: contain;
     padding-top: 55%;
   }
@@ -223,8 +223,8 @@
     background-size: contain;
     padding-top: 55%;
   }
-  .jj-pg {
-    background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  .jj {
+    background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     background-size: contain;
     padding-top: 55%;
   }
