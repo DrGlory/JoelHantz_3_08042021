@@ -8,8 +8,395 @@
 }
 @import'1-Utils/_variables.scss';
 
-// Ici, commence la page d'acceuil
-@media (max-width: 480px){
+// accueil ordi
+@media screen and (max-width: 1440px){
+    body{
+        margin: 0
+    }
+    .bloc-page{
+        display: grid;
+        grid-template-columns: 1.3fr 1fr 1fr 1fr;
+        grid-template-rows: 0.4fr 0.1fr 0.5fr 0.1fr 0.1fr 0.5fr 0.1fr;
+        grid-template-areas: 
+        "h h h h"
+        "s1 s2 s2 s2"
+        "s1 s2 s2 s2"
+        "s1 s2 s2 s2"
+        "s1 s2 s2 s2"
+        "s1 s2 s2 s2"
+        "f f f f";
+        }
+    header{
+        grid-area: h;
+        background-color: #eaeaea;
+        .log {
+            box-shadow: 0 2px 10px -2px rgb(150, 150, 150);
+            text-align: center;
+            background-color: white;
+            padding: 4%;      
+            .logo{
+                width: 50%;
+            }
+        }
+        .localisation{
+            font-size: 1.1em;
+            font-family: roboto;
+             text-align: center;
+             padding:3%;
+             .map{
+                padding: 0 2% 0 0; 
+            }
+        }
+    }
+    .section-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        grid-area: s1;
+        font-family: roboto;
+        h1{
+            margin-top: 0;
+            padding-top: 8%;
+        }
+        .take{
+            background-color: #ffffff;
+            text-align: center;
+            padding: 5% 5% 13.3% 5%;
+        }
+        input{
+            font-size: 1em;
+            color: whitesmoke;
+            background: linear-gradient(to top,$primary-color, $secondary-color);
+            border-radius: 20px;
+            padding: 3% 1% 3% 6%;
+            border: none;
+            box-shadow: 0 3px 8px 0 rgb(180, 180, 180);
+        }
+        &.Choose{
+            background-color: whitesmoke;
+            box-sizing: border-box;
+            }  
+             h2{
+                margin: 3% 0 0 7%;
+            }
+
+            .restau{
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 5%;
+                .pop{
+                    padding: 0 8%;
+                }
+                .pop:hover{
+                    color:  #9356DC;
+                }
+            }
+            .restau a{
+                text-decoration: none;
+                color: black;
+                &.restau__link{
+                    padding: 7%;
+                    border-radius: 30px;
+                    background-color: #f6f6f6;
+                    box-shadow: 0 5px 11px 0 rgb(180, 180, 180);
+                }
+                .restau__link-number{
+                    text-align: center;
+                    color: whitesmoke;
+                    position: absolute;
+                    left: 15px;
+                    background-color: $primary-color;
+                    border-radius: 50%;
+                    width: 1.5%;
+                    display: block;
+                } 
+            }
+    
+    }
+    .section-2{
+        grid-area: s2;
+        
+        font-family: roboto;
+        background-color: #f6f6f6;
+        padding: 5%;
+         h2{
+            padding-left: 5%;
+        }
+        .contain-images{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        //    display: flex;
+            .restaurant{
+                margin: 5%;
+                border-radius: 6%;
+                box-shadow: 0 5px 11px 0 rgb(180, 180, 180);
+                display: grid;
+                grid-template-columns: 1fr 1.5fr 1fr 0.1fr;
+                grid-template-rows: 0.1fr 0.1fr 0.5fr 0.2fr;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            .restaurant-img{
+                grid-column: 1/5;
+                grid-row: 1/4;
+            }
+            .bigheight{
+                height: 300px;
+            }
+            img{
+                object-fit: cover;
+                width: 100%;
+                max-height: 100%;
+                border-radius: 6% 6% 0 0;
+            }
+            .new{
+                grid-column: 3/4;
+                grid-row: 2/3;
+                background-color: #96e0ce;
+                padding: 2%;
+                color: #589284;
+                text-align: center;
+            }
+            .restaurant__heading{
+                font-size: 1.3em;
+                line-height: 1%;
+            }
+            .group{
+                padding: 0 5% 7% 5%;
+                grid-column: 1/5;
+                grid-row: 4/5;
+                display: flex;
+                justify-content: space-between;
+                .hrt{
+                    font-size: 1.7em;
+                    padding: 5%;
+                }
+             }
+        }
+    }
+    footer{
+        grid-area: f;
+        color: white;
+        background-color: #353535;
+        font-family: roboto;
+        .footer__heading{
+            font-family: shrikhand;
+            font-size: 1.5em;
+            padding: 5%;
+        }
+        .watchasay, .ending{
+            padding: 0 0 2% 5%;
+            .ye{
+                padding-right: 3%;
+            }
+            .iye{
+                padding-right: 4%;
+            }
+            .ending__cont{
+                padding: 3% 0;
+            }
+        }
+    }
+// acueil tablet
+}
+@media screen and (max-width: 768px){
+    body{
+        margin: 0
+    }
+    .bloc-page{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr;
+        grid-template-areas: 
+        "h h h h"
+        "s1 s1 s1 s1"
+        "s1 s1 s1 s1"
+        "s2 s2 s2 s2"
+        "s2 s2 s2 s2"
+        "s2 s2 s2 s2"
+        "f f f f";
+        }
+    header{
+        grid-area: h;
+        background-color: #eaeaea;
+        .log {
+            box-shadow: 0 2px 10px -2px rgb(150, 150, 150);
+            text-align: center;
+            background-color: white;
+            padding: 4%;      
+            .logo{
+                width: 50%;
+            }
+        }
+        .localisation{
+            font-size: 1.1em;
+            font-family: roboto;
+             text-align: center;
+             padding:3%;
+             .map{
+                padding: 0 2% 0 0; 
+            }
+        }
+    }
+    .section-1{
+        grid-area: s1;
+        font-family: roboto;
+        h1{
+            margin-top: 0;
+            padding-top: 8%;
+        }
+        .take{
+            background-color: #f6f6f6;
+            text-align: center;
+            padding: 5% 5% 13.3% 5%;
+        }
+        input{
+            font-size: 1em;
+            color: whitesmoke;
+            background: linear-gradient(to top,$primary-color, $secondary-color);
+            border-radius: 20px;
+            padding: 3% 1% 3% 6%;
+            border: none;
+            box-shadow: 0 3px 8px 0 rgb(180, 180, 180);
+        }
+        &.Choose{
+            background-color: whitesmoke;
+            box-sizing: border-box;
+            }  
+             h2{
+                margin: 3% 0 0 7%;
+            }
+
+            .restau{
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 5%;
+                .pop{
+                    padding: 0 8%;
+                }
+                .pop:hover{
+                    color:  #9356DC;
+                }
+            }
+            .restau a{
+                text-decoration: none;
+                color: black;
+                &.restau__link{
+                    padding: 4%;
+                    border-radius: 30px;
+                    background-color: #f6f6f6;
+                    box-shadow: 0 5px 11px 0 rgb(180, 180, 180);
+                }
+                .restau__link-number{
+                    text-align: center;
+                    color: whitesmoke;
+                    position: absolute;
+                    left: 15px;
+                    background-color: $primary-color;
+                    border-radius: 50%;
+                    width: 3%;
+                    display: block;
+                } 
+            }
+    
+    }
+    .section-2{
+        grid-area: s2;
+        
+        font-family: roboto;
+        background-color: #f6f6f6;
+        padding: 5%;
+         h2{
+            padding-left: 5%;
+        }
+        .contain-images{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        //    display: flex;
+            .restaurant{
+                margin: 5%;
+                border-radius: 6%;
+                box-shadow: 0 5px 11px 0 rgb(180, 180, 180);
+                display: grid;
+                grid-template-columns: 1fr 1.5fr 1fr 0.1fr;
+                grid-template-rows: 0.1fr 0.1fr 0.5fr 0.2fr;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            .restaurant-img{
+                grid-column: 1/5;
+                grid-row: 1/4;
+            }
+            .bigheight{
+                height: 300px;
+            }
+            img{
+                object-fit: cover;
+                width: 100%;
+                max-height: 100%;
+                border-radius: 6% 6% 0 0;
+            }
+            .new{
+                grid-column: 3/4;
+                grid-row: 2/3;
+                background-color: #96e0ce;
+                padding: 2%;
+                color: #589284;
+                text-align: center;
+            }
+            .restaurant__heading{
+                font-size: 1.3em;
+                line-height: 1%;
+            }
+            .group{
+                padding: 0 5% 7% 5%;
+                grid-column: 1/5;
+                grid-row: 4/5;
+                display: flex;
+                justify-content: space-between;
+                .hrt{
+                    font-size: 1.7em;
+                    padding: 5%;
+                }
+             }
+        }
+    }
+    footer{
+        grid-area: f;
+        color: white;
+        background-color: #353535;
+        font-family: roboto;
+        .footer__heading{
+            font-family: shrikhand;
+            font-size: 1.5em;
+            padding: 5%;
+        }
+        .watchasay, .ending{
+            padding: 0 0 2% 5%;
+            .ye{
+                padding-right: 3%;
+            }
+            .iye{
+                padding-right: 4%;
+            }
+            .ending__cont{
+                padding: 3% 0;
+            }
+        }
+    }
+
+}
+
+// Ici, commence la page d'acceuil portable
+@media screen and (max-width: 480px){
         body{
         margin: 0
     }
@@ -105,6 +492,8 @@
             padding-left: 5%;
         }
         .contain-images{
+            display: grid;
+            grid-template-columns: 1fr;
             width: 100%;
             .restaurant{
                 margin: 5%;
