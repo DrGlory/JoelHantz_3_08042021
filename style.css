@@ -128,6 +128,10 @@
     -ms-grid-rows: 0.1fr 0.1fr 0.5fr 0.2fr;
         grid-template-rows: 0.1fr 0.1fr 0.5fr 0.2fr;
   }
+  .section-2 .contain-images a {
+    text-decoration: none;
+    color: black;
+  }
   .section-2 .contain-images .restaurant-img {
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
