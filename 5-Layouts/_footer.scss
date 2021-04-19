@@ -1,0 +1,19 @@
+footer {
+    color: white;
+    background-color: #353535;
+    font-family: roboto;
+    .footer__heading{
+        font-family: shrikhand;
+        font-size: 1.5em;
+        padding: 5%;
+    }
+    .watchasay, .ending{
+        padding: 0 0 2% 5%;
+        .ye{
+            padding-right: 3%;
+        }
+        .ending__cont{
+            padding: 3% 0;
+        }
+    }
+}
