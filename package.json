@@ -1,0 +1,22 @@
+{
+  "name": "P3_real",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass ./public/sass/style.scss:./public/css/style.css -w",
+    "compile1": "sass ./style.scss:./style.css --watch",
+    "compile2":"sass ./public/sass/style.scss:./public/css/style.css -s expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrGlory/P3_real.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrGlory/P3_real/issues"
+  },
+  "homepage": "https://github.com/DrGlory/P3_real#readme"
+}
