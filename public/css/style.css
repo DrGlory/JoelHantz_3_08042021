@@ -19,6 +19,53 @@
   body {
     margin: 0;
   }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spinreverse {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  body .sec2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: roboto;
+    color: #8a1d72;
+    position: absolute;
+    background-color: #eeeeee;
+    height: 500px;
+    line-height: 50px;
+    width: 100%;
+  }
+  body .miam {
+    padding: 0 0 30% 8%;
+    animation: spinreverse 1s linear infinite;
+  }
+  body .loader {
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+  }
+  body .loader-double {
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: #bc40c0;
+    border-bottom-color: #9537d4;
+    animation: spin 1s linear infinite;
+  }
 
   .bloc-page {
     display: grid;
