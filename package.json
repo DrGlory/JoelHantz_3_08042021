@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "sass ./public/sass/style.scss:./public/css/style.css -w",
     "compile1": "sass ./style.scss:./style.css --watch",
-    "compile2":"sass ./public/sass/style.scss:./public/css/style.css -s expanded"
+    "compile2":"sass ./public/sass/style.scss:./public/css/style.css --style compressed"
   },
   "repository": {
     "type": "git",
