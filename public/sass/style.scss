@@ -1,12 +1,12 @@
 @import'1-Utils/_variables.scss';
 @import'1-Utils/_animations.scss';
 @font-face {
-    font-family: Shrikhand;
-    src: url('./public/fonts/Shrikhand-Regular.otf');
+    font-family:Shrikhand;
+    src: url('../public/fonts/Shrikhand-Regular.otf');
 }
 @font-face {
-    font-family: roboto;
-    src: url('./public/fonts/Roboto-Regular-webfont.woff');
+    font-family:roboto;
+    src: url('../public/fonts/Roboto-Regular-webfont.woff');
 }
 @keyframes glissando{
     0%{

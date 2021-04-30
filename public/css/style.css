@@ -1,10 +1,10 @@
 @font-face {
   font-family: Shrikhand;
-  src: url("./public/fonts/Shrikhand-Regular.otf");
+  src: url("../public/fonts/Shrikhand-Regular.otf");
 }
 @font-face {
   font-family: roboto;
-  src: url("./public/fonts/Roboto-Regular-webfont.woff");
+  src: url("../public/fonts/Roboto-Regular-webfont.woff");
 }
 @keyframes glissando {
   0% {
