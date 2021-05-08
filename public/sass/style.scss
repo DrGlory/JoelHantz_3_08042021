@@ -164,6 +164,10 @@
             border: none;
             box-shadow: 0 3px 8px 0 rgb(180, 180, 180);
         }
+        input:hover{
+            background: linear-gradient(to top,$primary-color-clear, $secondary-color-clear);
+            box-shadow: 0 3px 12px 0 rgb(107, 107, 107);
+        }
         &.Choose{
             background-color: whitesmoke;
             box-sizing: border-box;
@@ -275,12 +279,12 @@
                 grid-row: 4/5;
                 display: flex;
                 justify-content: space-between;
-                svg#hrt{
+                svg.hrt{
                     padding-top: 5%;
                     fill: transparent;
                     stroke: black;
                     stroke-width: 5%;
-                    transition: 300ms;
+                    transition: 300ms ease-in-out;
                     &:hover{
                         fill: url(#gradient);
                     }
@@ -309,6 +313,10 @@
             .ending__cont{
                 padding: 1% 0;
             }
+        }
+        .ending a{
+            text-decoration: none;
+            color: white;
         }
     }
 }
@@ -377,6 +385,10 @@
             padding: 4%;
             border: none;
             box-shadow: 0 3px 8px 0 rgb(180, 180, 180);
+        }
+        input:hover{
+            background: linear-gradient(to top,$primary-color-clear, $secondary-color-clear);
+            box-shadow: 0 3px 12px 0 rgb(107, 107, 107);
         }
         &.Choose{
             background-color: whitesmoke;
@@ -511,6 +523,10 @@
                 padding: 1% 0;
             }
         }
+        .ending a{
+            text-decoration: none;
+            color: white;
+        }
     }
 }
 // accueil ordi M
@@ -578,6 +594,10 @@
             padding: 4%;
             border: none;
             box-shadow: 0 3px 8px 0 rgb(180, 180, 180);
+        }
+        input:hover{
+            background: linear-gradient(to top,$primary-color-clear, $secondary-color-clear);
+            box-shadow: 0 3px 12px 0 rgb(107, 107, 107);
         }
         &.Choose{
             background-color: whitesmoke;
@@ -712,6 +732,10 @@
                 padding: 1% 0;
             }
         }
+        .ending a{
+            text-decoration: none;
+            color: white;
+        }
     }
 }    
 // Page d'acueil tablet
@@ -775,6 +799,10 @@
             padding: 3%;
             border: none;
             box-shadow: 0 3px 8px 0 rgb(180, 180, 180);
+        }
+        input:hover{
+            background: linear-gradient(to top,$primary-color-clear, $secondary-color-clear);
+            box-shadow: 0 3px 12px 0 rgb(107, 107, 107);
         }
         &.Choose{
             background-color: whitesmoke;
@@ -901,6 +929,10 @@
                 padding: 3% 0;
             }
         }
+        .ending a{
+            text-decoration: none;
+            color: white;
+        }  
     }
 }
 // Page d'acceuil portable L
@@ -949,6 +981,10 @@
             padding: 4%;
             border: none;
             box-shadow: 0 3px 8px 0 rgb(180, 180, 180);
+        }
+        input:hover{
+            background: linear-gradient(to top,$primary-color-clear, $secondary-color-clear);
+            box-shadow: 0 3px 12px 0 rgb(107, 107, 107);
         }
         &.Choose{
             background-color: whitesmoke;
@@ -1074,6 +1110,10 @@
             }
         }
     }
+    .ending a{
+        text-decoration: none;
+        color: white;
+    }  
 }
 // Page d'acceuil portable S
 @media screen and (max-width: 320px){
@@ -1121,6 +1161,10 @@
             padding: 4%;
             border: none;
             box-shadow: 0 3px 8px 0 rgb(180, 180, 180);
+        }
+        input:hover{
+            background: linear-gradient(to top,$primary-color-clear, $secondary-color-clear);
+            box-shadow: 0 3px 12px 0 rgb(107, 107, 107);
         }
         &.Choose{
             background-color: whitesmoke;
@@ -1290,6 +1334,7 @@
         }
         .green-arrow{
             padding: 0 15% 5% 6%;
+            color: #353535;
          }
         .bg img{
             width: 100%;
@@ -1321,12 +1366,11 @@
             // display: flex;
             // justify-content: center;
         }
-        svg#hrt{
+        svg.hrt{
             fill: transparent;
             stroke: black;
             stroke-width: 5%;
             position: relative;
-            z-index: 1;
             transition: 300ms;
             &:hover{
                 fill: url(#gradient);
@@ -1431,6 +1475,14 @@
         color:white;
         background: linear-gradient(to top left,#9356DC, #FF79DA) 
     }
+    input:hover{
+        background: linear-gradient(to top,$primary-color-clear, $secondary-color-clear);
+        box-shadow: 0 3px 12px 0 rgb(107, 107, 107);
+    }
+    .ending a{
+        text-decoration: none;
+        color: white;
+    }  
 }
 // Ici, commence le medias query écran moyen M pour ordi dans les autres pages 
 @media screen and (max-width: 1440px){
@@ -1607,6 +1659,14 @@
         color:white;
         background: linear-gradient(to top left,#9356DC, #FF79DA) 
     }
+    input:hover{
+        background: linear-gradient(to top,$primary-color-clear, $secondary-color-clear);
+        box-shadow: 0 3px 12px 0 rgb(107, 107, 107);
+    }
+    .ending a{
+        text-decoration: none;
+        color: white;
+    }  
 }   
 // Ici, commence le medias query pour ordi petit écran S dans les autres pages
 @media screen and (max-width: 1024px){
@@ -1786,6 +1846,14 @@
         color:white;
         background: linear-gradient(to top left,#9356DC, #FF79DA) 
     }
+    input:hover{
+        background: linear-gradient(to top,$primary-color-clear, $secondary-color-clear);
+        box-shadow: 0 3px 12px 0 rgb(107, 107, 107);
+    }
+    .ending a{
+        text-decoration: none;
+        color: white;
+    }  
 } 
 // Ici, commence le medias query pour tablette dans les autres pages
 @media (max-width: 768px){
@@ -1967,7 +2035,15 @@
             color:white;
             background: linear-gradient(to top left,#9356DC, #FF79DA) 
         }
-    }    
+        input:hover{
+            background: linear-gradient(to top,$primary-color-clear, $secondary-color-clear);
+            box-shadow: 0 3px 12px 0 rgb(107, 107, 107);
+        }
+    } 
+    .ending a{
+        text-decoration: none;
+        color: white;
+    }     
 }
 // Ici, commence le medias query pour portable grand écran L dans les autres pages
 @media (max-width: 480px){
@@ -2148,8 +2224,16 @@
             border: none;
             color:white;
             background: linear-gradient(to top left,#9356DC, #FF79DA);          
+        }
+        input:hover{
+            background: linear-gradient(to top,$primary-color-clear, $secondary-color-clear);
+            box-shadow: 0 3px 12px 0 rgb(107, 107, 107);
         }    
-    }   
+    }
+    .ending a{
+        text-decoration: none;
+        color: white;
+    }  
 }
 // Ici, commence le medias query pour portable écran moyen M dans les autres pages 
 @media (max-width: 375px){
@@ -2342,8 +2426,16 @@
             border: none;
             color:white;
             background: linear-gradient(to top left,#9356DC, #FF79DA);          
-        }    
-    }   
+        } 
+        input:hover{
+            background: linear-gradient(to top,$primary-color-clear, $secondary-color-clear);
+            box-shadow: 0 3px 12px 0 rgb(107, 107, 107);
+        }   
+    } 
+    .ending a{
+        text-decoration: none;
+        color: white;
+    }    
 }
 // Ici, commence le medias query pour portable petit écran S dans les autres pages
 @media (max-width: 320px){
@@ -2530,6 +2622,14 @@
             border: none;
             color:white;
             background: linear-gradient(to top left,#9356DC, #FF79DA);          
-        }    
-    }   
+        }  
+        input:hover{
+            background: linear-gradient(to top,$primary-color-clear, $secondary-color-clear);
+            box-shadow: 0 3px 12px 0 rgb(107, 107, 107);
+        }  
+    }
+    .ending a{
+        text-decoration: none;
+        color: white;
+    }     
 }

@@ -6,7 +6,8 @@
   "scripts": {
     "compile": "sass ./public/sass/style.scss:./public/css/style.css -w",
     "compile1": "sass ./style.scss:./style.css --watch",
-    "compile2":"sass ./public/sass/style.scss:./public/css/style.css --style compressed"
+    "compile2":"sass ./public/sass/style.scss:./public/css/style.css --style compressed",
+    "compile3": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/"
   },
   "repository": {
     "type": "git",
@@ -15,6 +16,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/DrGlory/P3_real/issues"
   },
